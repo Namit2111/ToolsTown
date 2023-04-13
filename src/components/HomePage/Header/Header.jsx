@@ -13,7 +13,7 @@ const Header = () => {
 
   useEffect(() => {
     changeBackground()
-    // adding the event when scroll change background
+
     window.addEventListener("scroll", changeBackground)
   })
 
