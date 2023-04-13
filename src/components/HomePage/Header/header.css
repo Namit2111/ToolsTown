@@ -1,0 +1,63 @@
+.navbar{
+    display: flex;
+    height: 70px;
+    position: sticky;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+  z-index: 2;
+  font-family: "Titillium Semibold",sans-serif;
+scroll-snap-type: none;
+color: blacks;
+
+  }
+  .navbar_active{
+    display: flex;
+    height: 70px;
+    position: sticky;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+  z-index: 2;
+  font-family: "Titillium Semibold",sans-serif;
+scroll-snap-type: none;
+
+    color: white;
+  }
+  .left{
+    /* background-color: antiquewhite; */
+    background: transparent;
+    width: 26%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 8vh;
+  }
+  .mid{
+    /* background-color: aqua; */
+    background: transparent;
+    width: 44%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 8vh;
+  }
+  .right{
+    /* background-color: aquamarine; */
+    background: transparent;
+    width: 30%;
+    text-align: center;
+    vertical-align: middle;
+    /* line-height: 8vh; */
+    display: flex; 
+  }
+  .right-img{
+  
+    margin-top: 2.8vh;
+    width:35%;
+  }
+  #search{
+  margin-top: 2.8vh;
+  margin-left: 12px;
+  }
+  

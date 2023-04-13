@@ -1,0 +1,29 @@
+.FileDesc{
+    display: flex ;
+    padding-top: 70px;
+    height:100vh ;
+    width: 100%;
+    background: transparent linear-gradient(258deg, #50FF48 0%, #50FF48 0%, #015B7E 100%) 0% 0% no-repeat padding-box;;
+    scroll-snap-align: start;
+    flex-basis: 0;
+    color: white;
+    align-items: center;
+}
+.FileImage{
+  flex: 50%;
+
+display: flex;
+  justify-content: center;
+}
+.FileCont{
+    flex: 50%;
+    text-align:center;
+    padding-left: 30px;
+}
+img{
+    width: 70vh;
+}
+p{
+    font-size:40px;
+    padding-bottom: 100px;
+}

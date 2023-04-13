@@ -1,0 +1,35 @@
+.PdfDesc{
+   /* margin-top: 70px; */
+   display: flex ;
+   padding-top: 70px;
+   height:100vh ;
+   width: 100%;
+   /* background: transparent linear-gradient(61deg, #1B1B6F 0%, #285BC5 45%, #3BCFF0 100%) 0% 0% no-repeat padding-box;
+    */
+    /* background: linear-gradient(-45deg, #8805cd, #145bb3, #8805cd, #fe68ff); */
+    background:transparent linear-gradient(61deg, #8805cd 0%, #b3143e 45%, #8805cd 100%) 0% 0% no-repeat padding-box;
+   scroll-snap-align: start;
+   flex-basis: 0;
+  color: white;
+   align-items: center;
+
+   
+}
+
+.PdfImage{
+  flex: 50%;
+
+display: flex;
+  justify-content: center;
+}
+.PdfCont{
+    flex: 50%;
+    text-align:center;
+}
+img{
+    width: 70vh;
+}
+p{
+    font-size:40px;
+    padding-bottom: 100px;
+}
