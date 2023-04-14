@@ -26,7 +26,7 @@ const Header = () => {
 
     <header>
       <div className={`navbar ${navbar ? "active" : ""}`}>
-        <div className="left">Tools Town</div>
+        <div className="left"><img id ="navimg"src={require("../../../Assets/Images/logo.jpeg")} alt="" /></div>
         <div className="mid">
           <li>PDF</li>
           <li>AI</li>
