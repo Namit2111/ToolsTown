@@ -3,28 +3,24 @@ import './App.css';
 import LandingPage from './components/HomePage/LandingPage/LandingPage';
 function App() {
 
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    window.onload = () => {
-      const l = document.getElementsByClassName('AIImage').addEventListener('load')
-      console.log(l)
-      if(l){setLoading(false);}
-      
-    };
-  }, []);
+    setTimeout(() => setLoading(false), 2500)
+  }, [])
 
   return (
     <div>
-      {loading ? (
+      {loading === false? (
+          
          <div className="App">
          <LandingPage/>
           </div>
+        
       ) : (
-       
-     <div className="loader">
-     <h2>Loading...</h2>
-   </div>
+        <div className="loader">
+        <h2>Loading...</h2>
+      </div>
       )}
     </div>
   );
