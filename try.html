@@ -1,48 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="./try.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="basic-grid.css">
+    <title>Source Code Of Animated Footer Design</title>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
-<style>
-    body {
-  margin: 0;
-  padding: 0;
-  
-}
-   @keyframes fadeIn { 
-    0%   { opacity:1; }
-  50%  { opacity:0; }
-  100% { opacity:1; }
-  }
-  
-#p{
-   color: white; 
-   
-    font-size: 40px;
-  }
-
-.loader-wrapper{
- display: flex;
-flex-direction: column;
-  height: 100vh;
-align-items: center;
-    justify-content: center;
-    background: #222;
-   
-}
-img{
-    height: 18%;
-    animation:fadeIn 1s infinite linear;
-  margin-left: auto;
-  margin-right: auto;
-} 
-</style>
 <body>
-
-    <div class='loader-wrapper'>
-    <img src=logo.jpeg alt="Tools"/>
- 
-     
-   </div>
-</body>
+   
+     <footer>
+        <div class="row">
+            <div class="col">
+                <img src="logo.png" class="footer_logo">
+                <p class="footer_about">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore harum molestias nesciunt, 
+                    doloremque magni aspernatur iste blanditiis, fugiat quaerat accusamus ut, vero tempore. 
+                    Fugiat, illum!
+                </p>
+            </div>
+            <div class="col">
+                <h3>Office <div class="bottom_line"><span></span></div></h3>
+                <p>2841 Romines Mill Road</p>
+                <p>Plano</p>
+                <p>Texas, ZIP 75074, United States</p>
+                <p class="footer_email">alexastockphotos@gamil.com</p>
+                <h4>+1 - 2145958195</h4>
+            </div>
+            <div class="col">
+                <h3>Links <div class="bottom_line"><span></span></div></h3>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">SERVICE</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Newsletter <div class="bottom_line"><span></span></div></h3>
+                <form>
+                    <ion-icon class="icon" name="mail"></ion-icon>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit"><ion-icon class="icon_right" name="arrow-round-forward"></ion-icon></button>
+                </form>
+                <div class="social_icons">
+                    <ion-icon class="social_icon" name="logo-facebook"></ion-icon>
+                    <ion-icon class="social_icon" name="logo-whatsapp"></ion-icon>
+                    <ion-icon class="social_icon" name="logo-twitter"></ion-icon>
+                    <ion-icon class="social_icon" name="logo-instagram"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Cosas Learning Ⓒ 2022 - All Rights Reserved</p>
+     </footer> 
+</body>   
 </html>

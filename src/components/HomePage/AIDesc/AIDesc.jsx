@@ -8,6 +8,7 @@ const AIDesc = () => {
       <div className='AICont'>
         <p id = "aip">All variety of AI tools to make your work easy</p>
         {/* <button id="AiTools">View Tools</button> */}
+        <button class="button-ai">VISIT</button>
       </div>
 
     <div className='AIImage'><img id = "aiimg" src={require("../../../Assets/Images/AiTools.png")} alt="Tools"/></div>

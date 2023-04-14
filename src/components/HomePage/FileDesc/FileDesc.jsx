@@ -7,6 +7,7 @@ const FileDesc = () => {
       <div className='FileDesc'>
       <div className='FileCont'>
         <p id = "filep">All variety of File tools to make your work easy</p>
+        <button class="button-file" >VISIT</button>
       </div>
 
     <div className='FileImage'><img  id = "fileimg"src={require("../../../Assets/Images/FileTools.png")} alt="Tools"/></div>
