@@ -16,7 +16,19 @@ function App() {
 
   useEffect(() => {
     const handleLoad = () => {
-      setIsLoading(false);
+      const images = document.getElementsByTagName("img");
+      let allLoaded = true;
+
+      for (let i = 0; i < images.length; i++) {
+        if (!images[i].complete || images[i].naturalWidth === 0) {
+          allLoaded = false;
+          break;
+        }
+      }
+
+      if (allLoaded) {
+        setIsLoading(false);
+      }
     };
 
     const handleError = () => {
