@@ -1,6 +1,6 @@
 .ImageDesc{
     display: flex ;
-    padding-top: 70px;
+    padding-top: 20px;
     height:100vh ;
     width: 100%;
     background:transparent linear-gradient(61deg, #1B1B6F 0%, #285BC5 45%, #3BCFF0 100%) 0% 0% no-repeat padding-box;
