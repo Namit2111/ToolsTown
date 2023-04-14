@@ -13,7 +13,6 @@ function App() {
   // }, [])
 
  
-
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -21,13 +20,28 @@ function App() {
       setIsLoading(false);
     };
 
+    const handleError = () => {
+      setIsLoading(false);
+    };
+
+    const images = document.getElementsByTagName("img");
+
+    for (let i = 0; i < images.length; i++) {
+      images[i].addEventListener("load", handleLoad);
+      images[i].addEventListener("error", handleError);
+    }
+
     window.addEventListener("load", handleLoad);
 
     return () => {
       window.removeEventListener("load", handleLoad);
+
+      for (let i = 0; i < images.length; i++) {
+        images[i].removeEventListener("load", handleLoad);
+        images[i].removeEventListener("error", handleError);
+      }
     };
   }, []);
-
   return (
     <div>
       {isLoading === false? (
