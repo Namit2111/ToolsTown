@@ -26,10 +26,10 @@ display: flex;
     flex: 50%;
     text-align:center;
 }
-img{
+#pdfimg{
     width: 70vh;
 }
-p{
+#pdfp{
     font-size:40px;
     padding-bottom: 100px;
 }

@@ -5,10 +5,10 @@ const PdfDesc = () => {
   return (
     <div className='PdfDesc'>
     <div className='PdfCont'>
-        <p>All variety of tools to implement on PDF</p>
+        <p id = "pdfp">All variety of tools to implement on PDF</p>
       </div>
 
-    <div className='PdfImage'><img src={require("../../../Assets/Images/PdfTools.png")} alt="Tools"/></div>
+    <div className='PdfImage'><img id = "pdfimg"src={require("../../../Assets/Images/PdfTools.png")} alt="Tools"/></div>
     </div>
   )
 }

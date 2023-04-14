@@ -6,11 +6,11 @@ const AIDesc = () => {
     
       <div className='AIDesc'>
       <div className='AICont'>
-        <p>All variety of AI tools to make your work easy</p>
+        <p id = "aip">All variety of AI tools to make your work easy</p>
         {/* <button id="AiTools">View Tools</button> */}
       </div>
 
-    <div className='AIImage'><img src={require("../../../Assets/Images/AiTools.png")} alt="Tools"/></div>
+    <div className='AIImage'><img id = "aiimg" src={require("../../../Assets/Images/AiTools.png")} alt="Tools"/></div>
     </div>
     
   )

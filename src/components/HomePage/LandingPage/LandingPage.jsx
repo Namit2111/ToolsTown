@@ -8,7 +8,7 @@ import ImageDesc from '../ImageDesc/ImageDesc'
 import Footer from '../Footer/Footer'
 const LandingPage = () => {
   return (
-    <div>
+    <div className='main-section'>
       <Header/>
       <div className='section'>
 

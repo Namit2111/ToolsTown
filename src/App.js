@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import './App.css';
 import LandingPage from './components/HomePage/LandingPage/LandingPage';
+import Loader from "./components/LoadingScreen/WebsiteLoader/Loader";
 function App() {
 
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 2500)
+    setTimeout(() => setLoading(false), 1000)
   }, [])
 
   return (
@@ -18,9 +19,7 @@ function App() {
           </div>
         
       ) : (
-        <div className="loader">
-        <h2>Loading...</h2>
-      </div>
+        <Loader/>
       )}
     </div>
   );

@@ -6,10 +6,10 @@ const ImageDesc = () => {
     
       <div className='ImageDesc'>
       <div className='ImageCont'>
-        <p>All variety of Image tools to make your work easy</p>
+        <p id = "imgp">All variety of Image tools to make your work easy</p>
       </div>
 
-    <div className='ImageImage'><img src={require("../../../Assets/Images/ImageTools.png")} alt="Tools"/></div>
+    <div className='ImageImage'><img id= "imgimg"src={require("../../../Assets/Images/ImageTools.png")} alt="Tools"/></div>
     </div>
     
   )
