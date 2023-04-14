@@ -7,20 +7,24 @@ function App() {
 
   useEffect(() => {
     window.onload = () => {
-      setLoading(false);
+      const l = document.getElementsByClassName('AIImage').addEventListener('load')
+      console.log(l)
+      if(l){setLoading(false);}
+      
     };
   }, []);
 
   return (
     <div>
       {loading ? (
-        <div className="loader">
-          <h2>Loading...</h2>
-        </div>
+         <div className="App">
+         <LandingPage/>
+          </div>
       ) : (
-        <div className="App">
-    <LandingPage/>
-     </div>
+       
+     <div className="loader">
+     <h2>Loading...</h2>
+   </div>
       )}
     </div>
   );
