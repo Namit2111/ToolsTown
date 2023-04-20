@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
 @keyframes fadin {
   0% {
-    transform: translateY(-50%);
+    transform: translateY(+50%);
   }
   100% {
     transform: translateY(0);

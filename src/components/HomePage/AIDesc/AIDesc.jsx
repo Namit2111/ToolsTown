@@ -1,6 +1,6 @@
 import React from 'react'
 import "./AIDesc.css"
-import "../../../Assets/Images/AiTools.png"
+// import "../../../Assets/Images/AiToolsre.png"
 const AIDesc = () => {
   return (
     
