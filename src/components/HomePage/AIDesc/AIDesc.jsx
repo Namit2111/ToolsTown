@@ -11,7 +11,7 @@ const AIDesc = () => {
         <button class="button-ai">VISIT</button>
       </div>
 
-    <div className='AIImage'><img id = "aiimg" src={require("../../../Assets/Images/AiTools.png")} alt="Tools"/></div>
+    <div className='AIImage'><img id = "aiimg" src={require("../../../Assets/Images/AiTools.png")} alt="Tools" crossOrigin="anonymous" /></div>
     </div>
     
   )

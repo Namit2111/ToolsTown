@@ -1,19 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="basic-grid.css">
-    <title>Source Code Of Animated Footer Design</title>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-</head>
-<body>
-   
-     <footer>
+import React from 'react'
+import "./Footer.css"
+const Footer = () => {
+  return (
+    <div className='Footer'>
+       
+
+
+       <footer>
         <div class="row">
             <div class="col">
-                <img src="logo.png" class="footer_logo">
+                {/* <img src="logo.png" class="footer_logo"> */}
                 <p class="footer_about">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore harum molestias nesciunt, 
                     doloremque magni aspernatur iste blanditiis, fugiat quaerat accusamus ut, vero tempore. 
                     Fugiat, illum!
@@ -30,17 +26,17 @@
             <div class="col">
                 <h3>Links <div class="bottom_line"><span></span></div></h3>
                 <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">SERVICE</a></li>
-                    <li><a href="">CONTACT US</a></li>
+                    <li><a href="/#">HOME</a></li>
+                    <li><a href="/#">ABOUT</a></li>
+                    <li><a href="/#">SERVICE</a></li>
+                    <li><a href="/#">CONTACT US</a></li>
                 </ul>
             </div>
             <div class="col">
                 <h3>Newsletter <div class="bottom_line"><span></span></div></h3>
                 <form>
                     <ion-icon class="icon" name="mail"></ion-icon>
-                    <input type="email" placeholder="Enter your email" required>
+                    <label><input type="email" placeholder="Enter your email" required /></label>
                     <button type="submit"><ion-icon class="icon_right" name="arrow-round-forward"></ion-icon></button>
                 </form>
                 <div class="social_icons">
@@ -51,8 +47,30 @@
                 </div>
             </div>
         </div>
-        <hr>
+        <hr
+        style={{
+            color: '#000000',
+            backgroundColor:'#000000',
+            height: 5
+        }}
+    />
         <p class="copyright">Cosas Learning Ⓒ 2022 - All Rights Reserved</p>
      </footer> 
-</body>   
-</html>
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+      </div>
+  )
+}
+
+export default Footer

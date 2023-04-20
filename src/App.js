@@ -6,53 +6,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Pdf from "./components/PDF_Screen/Pdf_Home/Pdf_Home";
 function App() {
 
-  // const [isLoading, setLoading] = useState(true)
-
-  // useEffect(() => {
-  //   setTimeout(() => setLoading(false), 1000)
-  // }, [])
-
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setLoading] = useState(true)
 
   useEffect(() => {
-    const handleLoad = () => {
-      const images = document.getElementsByTagName("img");
-      let allLoaded = true;
+    setTimeout(() => setLoading(false), 4000)
+  }, [])
 
-      for (let i = 0; i < images.length; i++) {
-        if (!images[i].complete || images[i].naturalWidth === 0) {
-          allLoaded = false;
-          break;
-        }
-      }
-
-      if (allLoaded) {
-        setIsLoading(false);
-      }
-    };
-
-    const handleError = () => {
-      setIsLoading(false);
-    };
-
-    const images = document.getElementsByTagName("img");
-
-    for (let i = 0; i < images.length; i++) {
-      images[i].addEventListener("load", handleLoad);
-      images[i].addEventListener("error", handleError);
-    }
-
-    window.addEventListener("load", handleLoad);
-
-    return () => {
-      window.removeEventListener("load", handleLoad);
-
-      for (let i = 0; i < images.length; i++) {
-        images[i].removeEventListener("load", handleLoad);
-        images[i].removeEventListener("error", handleError);
-      }
-    };
-  }, []);
   return (
     <div>
       {isLoading === false? (
@@ -61,7 +20,7 @@ function App() {
           <BrowserRouter>
           <Routes>
             <Route path="/" element={<LandingPage/>}></Route>
-            <Route path="Pdf" element={<Pdf/>}></Route>
+            <Route path="/Pdf" element={<Pdf/>}></Route>
           </Routes>
           </BrowserRouter>
 
