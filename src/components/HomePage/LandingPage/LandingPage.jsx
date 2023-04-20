@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from "../../common/Header/Header"
 import LandinIntro from '../LandingIntro/LandinIntro'
 import PdfDesc from '../PdfDesc/PdfDesc'
@@ -7,6 +7,11 @@ import FileDesc from '../FileDesc/FileDesc'
 import ImageDesc from '../ImageDesc/ImageDesc'
 import Footer from '../../common/Footer/Footer'
 const LandingPage = () => {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className='main-section'>
       <Header/>

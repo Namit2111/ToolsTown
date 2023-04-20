@@ -1,10 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./Pdf_Home.css"
-import Navbar from "../Nabvar/Navbar"
-// import "./main.js"
-// import  "./particles.js"
-// import "./particlesjs-config.json"
-// import Footer from '../Footer/Footer'
+import Pdf_navbar from '../pdf_navabr/PDFNavbar.jsx'
+// import Pdf_navbar from '../pdf_navabr/
+
 const Pdf_Home = () => {
 
   
@@ -24,30 +22,34 @@ const Pdf_Home = () => {
     )
   }
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
 
 
   return (
   
     <div>
-        <Navbar/>
-<div id = "particle-js"> 
-<div className='banner'>
-<h1>Every tool you need to work with PDFs in one place</h1>
+        
+       {/* <pdf_navbar/> */}
+       <Pdf_navbar/>
+    <div className='banner'>
+    <h1>Every tool you need to work with PDFs in one place</h1>
 
-</div>
+    </div>
 
 
         <div className='tools'>
       <section className="basic-grid">
      {row}
+     
      </section>
     </div>
     {/* <Footer/> */}
     </div>
 
-    {/* <script src="particles.js"></script>
-    <script src="main.js"></script> */}
-    </div>
+  
   
 
   )
