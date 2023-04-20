@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from "react";
 import "./Pdf_Home.css"
 import Pdf_navbar from '../pdf_navabr/PDFNavbar.jsx'
 // import Pdf_navbar from '../pdf_navabr/
 
-const Pdf_Home = () => {
+const Pdf_Home = (props) => {
 
   
 
@@ -25,7 +25,6 @@ const Pdf_Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
 
 
   return (

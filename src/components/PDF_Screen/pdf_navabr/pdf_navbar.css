@@ -1,6 +1,6 @@
 
   .navbarr {
-  
+  background-color: white;
     display: flex;
     height: 70px;
     position: sticky;
@@ -16,13 +16,14 @@
     align-items: center;
     flex-direction: row;
     left: 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
   }
   
 
   
   .left {
     /* background-color: antiquewhite; */
-    background: transparent;
+  
     width: 12%;
     text-align: left;
     vertical-align: middle;
@@ -37,7 +38,7 @@
   } 
   .mid {
     /* background-color: aqua; */
-    background: transparent;
+   
     width: 50%;
     display: flex;
     /* justify-content: space-around; */
@@ -51,7 +52,7 @@
   }
   .right {
     /* background-color: aquamarine; */
-    background: transparent;
+ 
     width: 30%;
     justify-content: right;
     vertical-align: middle;
