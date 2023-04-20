@@ -1,6 +1,6 @@
 import React from 'react'
-import "./pdf_navbar.css";
-const Pdf_navbar = () => {
+import "./Navbar.css"
+const Navbar = () => {
   return (
     <header>
     <div className="navbarr">
@@ -20,8 +20,7 @@ const Pdf_navbar = () => {
       </div>
     </div>
   </header>
-
   )
 }
 
-export default Pdf_navbar
+export default Navbar

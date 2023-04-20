@@ -16,12 +16,12 @@ const Footer = () => {
                 </p>
             </div>
             <div class="col">
-                <h3>Office <div class="bottom_line"><span></span></div></h3>
-                <p>2841 Romines Mill Road</p>
-                <p>Plano</p>
-                <p>Texas, ZIP 75074, United States</p>
-                <p class="footer_email">alexastockphotos@gamil.com</p>
-                <h4>+1 - 2145958195</h4>
+                <h3>Home<div class="bottom_line"><span></span></div></h3>
+                <p>2D 122, Sector 3 ,Madhavpuram</p>
+                <p>Meerut City</p>
+                <p>Meerut , Uttar Pradesh</p>
+                <p class="footer_email">namitjain@gamil.com</p>
+                <h4>+91 9548232723</h4>
             </div>
             <div class="col">
                 <h3>Links <div class="bottom_line"><span></span></div></h3>
@@ -54,7 +54,8 @@ const Footer = () => {
             height: 5
         }}
     />
-        <p class="copyright">Cosas Learning Ⓒ 2022 - All Rights Reserved</p>
+    
+        <p class="copyright">Education Purpose Ⓒ 2023 - All Rights Reserved</p>
      </footer> 
 
 

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./Pdf_Home.css"
-import Pdf_navbar from '../pdf_navabr/PDFNavbar.jsx'
+
+import Navbar from "../../common/Navbar/Navbar";
 // import Pdf_navbar from '../pdf_navabr/
 
 const Pdf_Home = (props) => {
@@ -32,7 +33,8 @@ const Pdf_Home = (props) => {
     <div>
         
        {/* <pdf_navbar/> */}
-       <Pdf_navbar/>
+       {/* <Pdf_navbar/> */}
+       <Navbar/>
     <div className='banner'>
     <h1>Every tool you need to work with PDFs in one place</h1>
 
