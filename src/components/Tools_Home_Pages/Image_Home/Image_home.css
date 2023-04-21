@@ -36,8 +36,8 @@
   } */
   
   .container{
-    animation: fadin 1s;
-    /* height: 80%; */
+    /* animation: fadin 1s; */
+
     background: white;
     cursor: pointer;
     border-radius: 15px;

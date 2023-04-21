@@ -9,10 +9,16 @@ import Docs_home from "./components/Tools_Home_Pages/Docs_Home/Docs_home";
 import Image_home from "./components/Tools_Home_Pages/Image_Home/Image_home";
 function App() {
 
+
+
   const [isLoading, setLoading] = useState(true)
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 4000)
+    // setTimeout(() => setLoading(false), 4000)
+    window.onload = function(){
+      setLoading(false)
+     
+    }
   }, [])
 
   return (

@@ -2,7 +2,7 @@ import {React,useEffect} from 'react'
 import "./SideBar.css"
 const SideBar = () => {
 
-    
+  
   useEffect(() => {
  
 
@@ -13,9 +13,15 @@ const SideBar = () => {
     function callbackFunc(entries, observer)
     {
         
+
+
+
+      
       entries.forEach(entry => {
         // var txt = entry.target.id + " visibility: " + entry.isIntersecting;
         if(entry.isIntersecting){
+
+          
           if(entry.target.id === "LIh"){
           document.getElementById("1").style.backgroundColor = "rgb(255,255,255)";
           document.getElementById("2").style.backgroundColor = "rgb(255 255 255 / 31%)";
@@ -95,6 +101,7 @@ const SideBar = () => {
             let observer = new IntersectionObserver(callbackFunc, options);
             
           observer.observe(document.getElementById('LIh'));
+
           observer.observe(document.getElementById('aip'));
           observer.observe(document.getElementById('pdfp'));
           observer.observe(document.getElementById('filep'));

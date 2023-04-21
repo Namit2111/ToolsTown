@@ -1,8 +1,11 @@
-import React from 'react'
+import {React} from 'react'
 import "./FileDesc.css"
 import "../../../Assets/Images/FileTools.png"
 import { Link } from 'react-router-dom'
 const FileDesc = () => {
+
+
+
   return (
     
       <div className='FileDesc'>
