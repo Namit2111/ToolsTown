@@ -16,6 +16,7 @@ const LandingPage = () => {
     <div className='main-section'>
       <Header/>
       <div className='section'>
+      
 
       <LandinIntro/>
       <AIDesc/>
