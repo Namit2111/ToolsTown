@@ -6,6 +6,7 @@ import AIDesc from '../AIDesc/AIDesc'
 import FileDesc from '../FileDesc/FileDesc'
 import ImageDesc from '../ImageDesc/ImageDesc'
 import Footer from '../../common/Footer/Footer'
+import SideBar from '../SideBar/SideBar'
 const LandingPage = () => {
   
   useEffect(() => {
@@ -16,7 +17,7 @@ const LandingPage = () => {
     <div className='main-section'>
       <Header/>
       <div className='section'>
-      
+      <SideBar/>
 
       <LandinIntro/>
       <AIDesc/>
@@ -25,7 +26,7 @@ const LandingPage = () => {
       <FileDesc/>
       <ImageDesc/>
      <Footer/>
-     
+   
       </div>
       
     </div>
