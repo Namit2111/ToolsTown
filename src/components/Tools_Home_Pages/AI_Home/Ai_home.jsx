@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./Ai_home.css"
 import Navbar from '../../common/Navbar/Navbar'
+import Page_Footer from "../../common/Page_Footer/Page_Footer";
 const Ai_home = () => {
  
     const row = []
@@ -42,9 +43,9 @@ const Ai_home = () => {
        </section>
       </div>
      
+    <Page_Footer/>
       </div>
   
-    
     
   
     )

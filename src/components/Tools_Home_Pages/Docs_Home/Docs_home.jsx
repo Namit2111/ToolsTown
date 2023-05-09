@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./Docs_home.css"
 import Navbar from '../../common/Navbar/Navbar'
+import Page_Footer from "../../common/Page_Footer/Page_Footer";
 const Docs_home = () => {
   
     const row = []
@@ -43,6 +44,7 @@ const Docs_home = () => {
        </section>
       </div>
       {/* <Footer/> */}
+      <Page_Footer/>
       </div>
   
     

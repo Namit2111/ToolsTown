@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./Pdf_Home.css"
-
+import Page_Footer from "../../common/Page_Footer/Page_Footer";
 import Navbar from "../../common/Navbar/Navbar";
 // import Pdf_navbar from '../pdf_navabr/
 
@@ -48,6 +48,10 @@ const Pdf_Home = (props) => {
      </section>
     </div>
     {/* <Footer/> */}
+    <div>
+    <Page_Footer/>
+    </div>
+    
     </div>
 
   
