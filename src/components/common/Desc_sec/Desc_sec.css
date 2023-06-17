@@ -1,33 +1,55 @@
-.FileDesc{
+.DesDesc{
     display: flex ;
     padding-top: 20px;
     height:100vh ;
     width: 100%;
-    background: transparent linear-gradient(258deg, #50FF48 0%, #50FF48 0%, #015B7E 100%) 0% 0% no-repeat padding-box;;
+    /* background: linear-gradient( 0deg, #383ab5 10%, #5f62d5 29%, #4226ab 60%); */
     scroll-snap-align: start;
     flex-basis: 0;
-    color: white;
+ color: white;
     align-items: center;
 }
-.FileImage{
+.DesImage{
   flex: 50%;
 
 display: flex;
   justify-content: center;
 }
-.FileCont{
+.DesCont{
     flex: 50%;
     text-align:center;
-    padding-left: 30px;
+    padding-left: 50px;
 }
-#fileimg{
+#Desimg{
     width: 70vh;
 }
-#filep{
+#Desp{
     font-size:40px;
-    padding-top: -50px;
+ padding-top: -50px;
 }
-.button-file {
+/* 
+#DesTools {
+  background: rgb(96,9,240);
+  background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+  border: none;
+  width: 15%;
+  padding-top: 4%;
+  color: white;
+  display: table-cell;
+  vertical-align: middle;
+}
+#DesTools:before {
+  height: 0%;
+  width: 2px;
+}
+#DesTools:hover {
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+} */
+
+.button-Des {
   padding: 1em 3em;
   border: none;
   outline: none;
@@ -45,7 +67,7 @@ display: flex;
 
 }
 
-.button-file:before {
+.button-Des:before {
   content: "";
   background: linear-gradient(
     45deg,
@@ -68,12 +90,12 @@ display: flex;
   -webkit-filter: blur(5px);
   width: calc(100% + 4px);
   height: calc(100% + 4px);
-  animation: glowing-button-file 20s linear infinite;
+  animation: glowing-button-Des 20s linear infinite;
   transition: opacity 0.3s ease-in-out;
   border-radius: 10px;
 }
 
-@keyframes glowing-button-file {
+@keyframes glowing-button-Des {
   0% {
     background-position: 0 0;
   }
@@ -85,13 +107,13 @@ display: flex;
   }
 }
 
-.button-file:after {
+.button-Des:after {
   z-index: -1;
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #2A8807;
+  background: #218;
   left: 0;
   top: 0;
   border-radius: 10px;

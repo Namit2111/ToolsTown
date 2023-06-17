@@ -35,7 +35,7 @@ const SideBar = () => {
 
           }
 
-          else if (entry.target.id === "aip") {
+          else if (entry.target.id === "PDF") {
             document.getElementById("1").style.backgroundColor = "rgb(255 255 255 / 31%)";
             document.getElementById("2").style.backgroundColor = "rgb(255,255,255)";
             document.getElementById("3").style.backgroundColor = "rgb(255 255 255 / 31%)";
@@ -44,7 +44,7 @@ const SideBar = () => {
             document.getElementById("6").style.backgroundColor = "rgb(255 255 255 / 31%)";
 
           }
-          else if (entry.target.id === "pdfp") {
+          else if (entry.target.id === "AI") {
             document.getElementById("1").style.backgroundColor = "rgb(255 255 255 / 31%)";
             document.getElementById("2").style.backgroundColor = "rgb(255 255 255 / 31%)";
             document.getElementById("3").style.backgroundColor = "rgb(255,255,255)";
@@ -53,7 +53,7 @@ const SideBar = () => {
             document.getElementById("6").style.backgroundColor = "rgb(255 255 255 / 31%)";
 
           }
-          else if (entry.target.id === "filep") {
+          else if (entry.target.id === "DOCS") {
             document.getElementById("1").style.backgroundColor = "rgb(255 255 255 / 31%)";
             document.getElementById("2").style.backgroundColor = "rgb(255 255 255 / 31%)";
             document.getElementById("3").style.backgroundColor = "rgb(255 255 255 / 31%)";
@@ -61,7 +61,7 @@ const SideBar = () => {
             document.getElementById("5").style.backgroundColor = "rgb(255 255 255 / 31%)";
             document.getElementById("6").style.backgroundColor = "rgb(255 255 255 / 31%)";
           }
-          else if (entry.target.id === "imgp") {
+          else if (entry.target.id === "IMG") {
             document.getElementById("1").style.backgroundColor = "rgb(255 255 255 / 31%)";
             document.getElementById("2").style.backgroundColor = "rgb(255 255 255 / 31%)";
             document.getElementById("3").style.backgroundColor = "rgb(255 255 255 / 31%)";
@@ -106,10 +106,10 @@ const SideBar = () => {
 
       observer.observe(document.getElementById('LIh'));
 
-      observer.observe(document.getElementById('aip'));
-      observer.observe(document.getElementById('pdfp'));
-      observer.observe(document.getElementById('filep'));
-      observer.observe(document.getElementById('imgp'));
+      observer.observe(document.getElementById('PDF'));
+      observer.observe(document.getElementById('AI'));
+      observer.observe(document.getElementById('DOCS'));
+      observer.observe(document.getElementById('IMG'));
       observer.observe(document.getElementById('footer'));
 
     }
@@ -143,22 +143,22 @@ const SideBar = () => {
 
           </li>
           <li id="2">
-            <a href="#aip" onClick={handleClick}>
+            <a href="#PDF" onClick={handleClick}>
               <span></span>
             </a>
           </li>
           <li id="3">
-            <a href="#pdfp" onClick={handleClick}>
+            <a href="#AI" onClick={handleClick}>
               <span></span>
             </a>
           </li>
           <li id="4">
-            <a href="#filep" onClick={handleClick}>
+            <a href="#DOCS" onClick={handleClick}>
               <span></span>
             </a>
           </li>
           <li id="5">
-            <a href="#imgp" onClick={handleClick}>
+            <a href="#IMG" onClick={handleClick}>
               <span></span>
             </a>
           </li>
